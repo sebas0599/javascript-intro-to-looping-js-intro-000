@@ -28,4 +28,3 @@ function doWhileLoop(array) {
   } while (array.length > -1 && maybeTrue());
     return array;
 }
-
