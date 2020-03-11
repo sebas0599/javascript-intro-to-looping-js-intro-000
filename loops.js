@@ -1,19 +1,19 @@
-function forLoop(array) {
-   for ( let i = 0; i < 25; i++) {
-     if (i === 1) {
-       array.push(`I am 1 strange loop.`)
-     } else {
-       array.push(`I am ${i} strange loops.`)
-     }
+ffunction forLoop(array) {
+  for (let i = 0; i < 25; i++) {
+    if (i === 1) {
+      array.push("I am 1 strange loop")
+    } else {
+      array.push(`I am ${i} strange loops.`)
+    }
+    }
+    return array
   }
-  return array;
-}
 
 function whileLoop(number) {
-  while (number > 0) {
-    console.log(--number)
+  while (number > 0){
+    console.log(number--)
   }
-  return "done";
+  return "done"
 }
 
 function maybeTrue() {
@@ -22,8 +22,7 @@ function maybeTrue() {
 
 function doWhileLoop(array) {
   do {
-    array.pop();
-  }
-  while (array.length > 0 && maybeTrue());
-  return array;
+    array = array.slice(1)
+  } while (array.length > 0 && maybeTrue())
+  return array
 }
